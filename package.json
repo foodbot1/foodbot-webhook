@@ -1,13 +1,12 @@
 {
   "name": "foodbot-webhook",
   "version": "1.0.0",
-  "description": "Webhook do FoodBot para receber notificações de pagamento",
-  "main": "servidor.js",
+  "main": "functions/webhook-pagamento/index.ts",
   "scripts": {
-    "start": "node servidor.js"
+    "start": "node functions/webhook-pagamento/index.ts"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "body-parser": "^1.20.2"
+    "firebase-admin": "^11.5.0",
+    "stripe": "^13.2.0"
   }
 }
